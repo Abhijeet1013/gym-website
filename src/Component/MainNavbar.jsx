@@ -2,7 +2,7 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-// import NavDropdown from "react-bootstrap/NavDropdown";
+import whatsapp from "../Images/whatsapp.png";
 import { Link } from "react-router-dom";
 
 const MainNavbar = () => {
@@ -17,11 +17,14 @@ const MainNavbar = () => {
                             <Nav.Link href="#home">
                                 <Link to="/" className="nav-link text-light px-3">HOME</Link>
                             </Nav.Link>
-                            <Nav.Link href="#aboutus">
+                            <Nav.Link href="#features">
                                 <Link to="/feature" className="nav-link text-light px-3">FEATURS</Link>
                             </Nav.Link>
                             <Nav.Link href="#Testimonials">
                                 <Link to="/Testimonials" className="nav-link text-light px-3">TESTIMONIALS</Link>
+                            </Nav.Link>
+                            <Nav.Link href="#FitnessTips">
+                                <Link to="/FitnessTips" className="nav-link text-light px-3">FITNESSTIPS</Link>
                             </Nav.Link>
                             <Nav.Link href="#Amenities">
                                 <Link to="/Amenities" className="nav-link text-light px-3">AMINITIES</Link>
@@ -32,8 +35,16 @@ const MainNavbar = () => {
                             <Nav.Link href="#contactus">
                                 <Link to="/contactus" className="nav-link text-light px-3">CONTACT</Link>
                             </Nav.Link>
-                            <Nav.Link href="#contactus">
-                                <Link to="/contactus" className="nav-link text-light px-3">TERMS</Link>
+                            <Nav.Link href="#TermsAndconditions">
+                                <Link to="/TermsAndconditions" className="nav-link text-light px-3">TERMS</Link>
+                            </Nav.Link>
+                            <Nav.Link href="#SocialMedia">
+                                <Link to="/SocialMedia" className="nav-link text-light px-0">
+                                    <img
+                                        src={whatsapp}
+                                        style={{width:"40px"}}
+                                    />
+                                </Link>
                             </Nav.Link>
                             {/* <NavDropdown title="More" id="basic-nav-dropdown" className="nav-link text-light">
                                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>

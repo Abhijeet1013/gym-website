@@ -10,7 +10,9 @@ import Amenities from "./Pages/Amenities";
 import AboutUs from "./Pages/AboutUs";
 import Contact from "./Pages/Contact";
 import MainNavbar from "./Component/MainNavbar";
-// import ScrollToTop from "./Pages/ScrollToTop";
+import FitnessTips from "./Pages/FitnessTips"; 
+import SocialMedia from "./Pages/SocialMedia";
+import TermsAndconditions from "./Pages/TermsAndconditions";
 
 
 
@@ -23,10 +25,13 @@ function App() {
         <Route path="/" element={<Home/>} />
         <Route path="/feature" element={<FeatursPage/>} />
         <Route path="/testimonials" element={<Testimonials/>} />
+        <Route path="/fitnesstips" element={<FitnessTips/>} />
         <Route path="/Amenities" element={<Amenities />} />
         <Route path="/AboutUs" element={<AboutUs/>} />
         <Route path="/contactus" element={<Contact/>} />
-        <Route path="footer" element={<Footer/>} />
+        <Route path="/termsandconditions" element={<TermsAndconditions/>} />
+        <Route path="/socialmedia" element={<SocialMedia/>} />
+        {/* <Route path="footer" element={<Footer/>} /> */}
       </Routes> 
       <Footer />
     </BrowserRouter>

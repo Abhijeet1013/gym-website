@@ -17,3 +17,14 @@
 .nav-dropdown-item:hover {
   background-color: rgba(0, 0, 0, 0.2);  /* Add hover effect for dropdown items */
 }
+
+
+.listborder{
+  position: relative;
+  display: block;
+  padding: .75rem 1.25rem;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, .125);
+
+}
